@@ -1,0 +1,20 @@
+---
+# Working regex
+# https://regex101.com/r/h8KV3P/5
+- id: ansible-lint
+  name: Ansible Lint for Playbooks and Roles
+  description: Checks that ansible roles and playbooks
+  entry: ansible-lint
+  require_serial: true
+  language: python
+  files: '^.*(playbooks/[^/]+/[^/]+/[a-zA-Z_-]+\.yml|roles/.*)' # match any playbook or anything in a role
+  types: [file, directory]
+
+- id: jinja2-lint
+  name: Check jinja2 syntax
+  description: Validate jinja2 sytax in templates
+  entry: jinja2-lint
+  require_serial: true
+  language: python
+  files: ".j2"
+  types: [text]
