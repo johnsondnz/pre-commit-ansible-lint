@@ -6,7 +6,7 @@ class used by jinja2_lint module
 """
 import os.path
 
-from ansible_collections.ansible.netcommon.plugins.filter.ipaddr import ipaddr
+from ansible_collections.ansible.utils.plugins.filter.ipaddr import ipaddr
 from jinja2 import BaseLoader
 from jinja2 import TemplateNotFound
 

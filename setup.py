@@ -13,7 +13,7 @@ PROJECT_AUTHOR = "@johnsondnz"
 PROJECT_COPYRIGHT = f"2018-{datetime.now().year}"
 PROJECT_URL = "git@github.com:johnsondnz/pre-commit-ansible-lint.git"
 PROJECT_EMAIL = "donaldjohnson.nz@gmail.com"
-PROJECT_VERSION = "1.0.0"
+PROJECT_VERSION = "1.0.1"
 
 REQUIRES = [
     "flake8==3.9.2",
