@@ -41,3 +41,9 @@ repos:
     rev: v1.0.7
     hooks:
       - id: coding-standards
+
+  - repo: git@github.com:johnsondnz/pre-commit-ansible-lint.git
+    rev: v1.0.0
+    hooks:
+      - id: ansible-lint
+      - id: jinja2-lint
