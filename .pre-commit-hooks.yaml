@@ -7,7 +7,7 @@
   entry: ansible-lint
   require_serial: true
   language: python
-  files: '^.*(playbooks/[^/]+/[^/]+/[a-zA-Z_-]+\.yml|roles/.*)' # match any playbook or anything in a role
+  files: "(.yml|.yaml)"
   types: [file, directory]
 
 - id: jinja2-lint
